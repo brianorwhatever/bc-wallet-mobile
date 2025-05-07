@@ -43,10 +43,10 @@ allprojects {
 
 subprojects {
     configurations.all {
-       it.resolutionStrategy.activateDependencyLocking()
+    //    it.resolutionStrategy.activateDependencyLocking()
     }
 }
 
-dependencyLocking {
-    lockAllConfigurations()
-}
+// dependencyLocking {
+//     lockAllConfigurations()
+// }

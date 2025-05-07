@@ -5,3 +5,4 @@ android/
 node_modules/
 generate-app-package-json.js
 .gitignore
+eslint.config.mjs
