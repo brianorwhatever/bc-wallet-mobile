@@ -77,11 +77,12 @@ exports[`BirthdateContent Component renders correctly 1`] = `
         Unified.Birthdate.Paragraph
       </Text>
       <RNDatePicker
+        buttonColor="#000000"
         cancelText="Cancel"
         confirmText="Confirm"
-        date={1729383120000}
+        date="2024-10-20T00:12:00.000Z"
         dividerColor="#000000"
-        maximumDate={1729383120000}
+        maximumDate="2024-10-20T00:12:00.000Z"
         minuteInterval={1}
         mode="date"
         onChange={[Function]}

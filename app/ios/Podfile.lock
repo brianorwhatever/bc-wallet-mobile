@@ -1,5 +1,5 @@
 PODS:
-  - anoncreds (0.2.4):
+  - anoncreds (0.3.1):
     - React
     - React-callinvoker
     - React-Core
@@ -1041,6 +1041,10 @@ PODS:
     - React-Core
   - react-native-get-random-values (1.8.0):
     - React-Core
+  - react-native-keyboard-controller (1.17.1):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
   - react-native-netinfo (11.4.1):
     - React-Core
   - react-native-orientation-locker (1.7.0):
@@ -1260,6 +1264,11 @@ PODS:
     - React-Core
   - RNPermissions (4.0.1):
     - React-Core
+  - RNReanimated (3.8.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+    - ReactCommon/turbomodule/core
   - RNScreens (4.4.0):
     - glog
     - RCT-Folly (= 2022.05.16.00)
@@ -1324,6 +1333,7 @@ DEPENDENCIES:
   - react-native-date-picker (from `../node_modules/react-native-date-picker`)
   - react-native-encrypted-storage (from `../node_modules/react-native-encrypted-storage`)
   - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
+  - react-native-keyboard-controller (from `../node_modules/react-native-keyboard-controller`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-orientation-locker (from `../node_modules/react-native-orientation-locker`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -1363,6 +1373,7 @@ DEPENDENCIES:
   - RNKeychain (from `../node_modules/react-native-keychain`)
   - RNLocalize (from `../node_modules/react-native-localize`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -1462,6 +1473,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-encrypted-storage"
   react-native-get-random-values:
     :path: "../node_modules/react-native-get-random-values"
+  react-native-keyboard-controller:
+    :path: "../node_modules/react-native-keyboard-controller"
   react-native-netinfo:
     :path: "../node_modules/@react-native-community/netinfo"
   react-native-orientation-locker:
@@ -1540,6 +1553,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-localize"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNSVG:
@@ -1552,7 +1567,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  anoncreds: 4b29b0ef841fc1a96910aab8f047c090ee6acb89
+  anoncreds: 02c9cc58129b908c7424bf6ac400274e69fdbc5c
   aries-askar: 6fce8d0405b8c84e654a694be1954649cf7955a3
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   CatCrypto: a477899b6be4954e75be4897e732da098cc0a5a8
@@ -1603,6 +1618,7 @@ SPEC CHECKSUMS:
   react-native-date-picker: 2eb0ed05ab9dcb4f337deda77deaa779807c4c61
   react-native-encrypted-storage: 569d114e329b1c2c2d9f8c84bcdbe4478dda2258
   react-native-get-random-values: 0fd2b6a3129988d701d10e30f0622d5f039531bc
+  react-native-keyboard-controller: 4edbd884be26548d89f5418714515982b510c395
   react-native-netinfo: cec9c4e86083cb5b6aba0e0711f563e2fbbff187
   react-native-orientation-locker: cc6f357b289a2e0dd2210fea0c52cb8e0727fdaa
   react-native-safe-area-context: 758e894ca5a9bd1868d2a9cfbca7326a2b6bf9dc
@@ -1642,6 +1658,7 @@ SPEC CHECKSUMS:
   RNKeychain: bbe2f6d5cc008920324acb49ef86ccc03d3b38e4
   RNLocalize: 8bf466de4c92d4721b254aabe1ff0a1456e7b9f4
   RNPermissions: f66cd055689ea84a93713c87f92e600f534e607e
+  RNReanimated: 88b3112762197355b6e8f3597077e7f798629c3c
   RNScreens: e0f79783ce405f4362c29d098b19fe7e241f11a9
   RNSVG: 36ab724902de0406127ef8d63d940c055e2a1442
   RNVectorIcons: fab5ba3ec74be0cdd3952ca28416214a921722a2
@@ -1650,6 +1667,6 @@ SPEC CHECKSUMS:
   VisionCamera: fc6f0f2cf7dd3da7c6496b279350bb357fab9964
   Yoga: d17d2cc8105eed528474683b42e2ea310e1daf61
 
-PODFILE CHECKSUM: 7143c901b4221bb5cd19672e06910ed9b96d7c96
+PODFILE CHECKSUM: e12d078e5c3e66acbbe850dd4c390f65719c702b
 
 COCOAPODS: 1.14.3

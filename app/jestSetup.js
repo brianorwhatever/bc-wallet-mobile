@@ -26,3 +26,14 @@ jest.mock('@bifold/react-native-attestation', () => ({}))
 jest.mock('@hyperledger/anoncreds-react-native', () => ({}))
 jest.mock('@hyperledger/aries-askar-react-native', () => ({}))
 jest.mock('@hyperledger/indy-vdr-react-native', () => ({}))
+jest.mock('react-native-keyboard-controller', () => ({
+  KeyboardController: {
+    setDefaultMode: jest.fn(),
+    setInputMode: jest.fn(),
+  },
+  KeyboardEvents: {
+    addListener: jest.fn(),
+    remove: jest.fn(),
+  },
+  KeyboardControllerView: 'KeyboardControllerView',
+}))
